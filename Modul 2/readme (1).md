@@ -1,5 +1,5 @@
 # <h1 align="center">Laporan Praktikum Modul 2 - Array</h1>
-<p align="center">Ben Waiz Pintus W - 2311102169</p>
+<p align="center">Mohammad Alfan Naraya - 2311102170</p>
 <p align="center">IF - 11 - E</p>
 
 ## Dasar Teori
@@ -100,7 +100,7 @@ int main()
 ```
 
 #### Output :
-<img width="177" alt="Screenshot 2024-03-19 174743" src="https://github.com/benwaiz/Struktur-Data-Assignment/assets/161665572/cdc695d1-bc92-4251-b9b4-dda61b7c0167">
+![image](https://github.com/NarayaAlfan19/Struktur-Data-Assigment/assets/162522372/56372ea2-b34f-44da-8d7a-2197e5a9e732)
 
 Program di atas adalah sebuah contoh program C++ yang mendemonstrasikan penggunaan array tiga dimensi. 
 Program ini meminta pengguna untuk memasukkan nilai ke dalam array tiga dimensi dengan ukuran 2x3x3, kemudian mencetak nilai-nilai tersebut.
@@ -136,7 +136,7 @@ int main (){
 ```
 
 #### Output :
-<img width="317" alt="Screenshot 2024-03-19 191705" src="https://github.com/benwaiz/Struktur-Data-Assignment/assets/161665572/3e30e553-cbbd-4b69-b766-1dea5f78c784">
+![image](https://github.com/NarayaAlfan19/Struktur-Data-Assigment/assets/162522372/66d71f70-ca86-4ba9-b9b9-8d7fad832280)
 
 Program di atas adalah contoh program C++ yang bertujuan untuk mencari nilai maksimum dari sebuah array yang diinputkan pengguna.
 Program meminta pengguna untuk memasukkan panjang array. Setelah panjang array dimasukkan, program membuat array dengan ukuran yang sesuai.
@@ -158,16 +158,16 @@ using namespace std;
 int main()
 {
     // Deklarasi variabel
-    int b_169;
+    int b_170;
     // Meminta pengguna untuk memasukkan jumlah array
     cout << "Masukkan jumlah array: ";
-    cin >> b_169;
+    cin >> b_170;
     // Deklarasi array dengan ukuran b_169
-    int arr[b_169];
+    int arr[b_170];
 
     // Input array
-    cout << "Masukkan " << b_169 << " angka\n";
-    for (int a = 0; a < b_169; a++)
+    cout << "Masukkan " << b_170 << " angka\n";
+    for (int a = 0; a < b_170; a++)
     {
         cout << "Array ke - " << a << ": ";
         cin >> arr[a];
@@ -176,7 +176,7 @@ int main()
 
     // Output data array
     cout << "Data Array : ";
-    for (int a = 0; a < b_169; a++)
+    for (int a = 0; a < b_170; a++)
     {
         cout << arr[a] << " ";
     }
@@ -184,7 +184,7 @@ int main()
 
     // Output nomor genap
     cout << "Nomor Genap : ";
-    for (int a = 0; a < b_169; a++)
+    for (int a = 0; a < b_170; a++)
     {
         if (arr[a] % 2 == 0)
         {
@@ -195,7 +195,7 @@ int main()
 
     // Output nomor ganjil
     cout << "Nomor Ganjil : ";
-    for (int a = 0; a < b_169; a++)
+    for (int a = 0; a < b_170; a++)
     {
         if (arr[a] % 2 != 0)
         {
@@ -206,7 +206,7 @@ int main()
 ```
 
 #### Output:
-<img width="639" alt="Screenshot 2024-03-19 194249" src="https://github.com/benwaiz/Struktur-Data-Assignment/assets/161665572/ef792661-dd81-49cc-9c43-c55e4b1519e8">
+![image](https://github.com/NarayaAlfan19/Struktur-Data-Assigment/assets/162522372/1f275020-e770-4028-a695-4449ee834477)
 
 Program di atas adalah contoh program C++ yang meminta pengguna untuk memasukkan sejumlah angka ke dalam array, 
  kemudian mencetak array tersebut serta memisahkan angka-genap dan angka-ganjil ke dalam dua kelompok terpisah.
@@ -218,43 +218,43 @@ Program di atas adalah contoh program C++ yang meminta pengguna untuk memasukkan
 
 ```C++
 #include <iostream>
+
 using namespace std;
 
 int main() {
-    int x, y, z;
+    int size1, size2, size3;
 
-    // Input ukuran array tiga dimensi dari pengguna
-    cout << "Masukkan jumlah elemen pada dimensi x: ";
-    cin >> x;
-    cout << "Masukkan jumlah elemen pada dimensi y: ";
-    cin >> y;
-    cout << "Masukkan jumlah elemen pada dimensi z: ";
-    cin >> z;
+    // Meminta pengguna untuk memasukkan ukuran elemen
+    cout << "Masukkan ukuran elemen array tiga dimensi:" << endl;
+    cout << "Ukuran dimensi 1: ";
+    cin >> size1;
+    cout << "Ukuran dimensi 2: ";
+    cin >> size2;
+    cout << "Ukuran dimensi 3: ";
+    cin >> size3;
 
-    // Deklarasi array tiga dimensi
-    int array3D[x][y][z];
+    // Membuat array tiga dimensi sesuai dengan ukuran yang dimasukkan oleh pengguna
+    int arr[size1][size2][size3];
 
-    // Input elemen array dari pengguna
-    cout << "Masukkan elemen-elemen array:" << endl;
-    for (int i = 0; i < x; ++i) {
-        for (int j = 0; j < y; ++j) {
-            for (int k = 0; k < z; ++k) {
-                cout << "Masukkan elemen [" << i << "][" << j << "][" << k << "]: ";
-                cin >> array3D[i][j][k];
+    // Meminta pengguna untuk memasukkan nilai-nilai elemen
+    cout << "Masukkan nilai-nilai elemen array:" << endl;
+    for (int i = 0; i < size1; ++i) {
+        for (int j = 0; j < size2; ++j) {
+            for (int k = 0; k < size3; ++k) {
+                cout << "Elemen [" << i << "][" << j << "][" << k << "]: ";
+                cin >> arr[i][j][k];
             }
         }
     }
 
-    // Menampilkan elemen array tiga dimensi
-    cout << "Data array tiga dimensi:" << endl;
-    for (int i = 0; i < x; ++i) {
-        for (int j = 0; j < y; ++j) {
-            for (int k = 0; k < z; ++k) {
-                cout << array3D[i][j][k] << " ";
+    // Menampilkan nilai-nilai elemen yang dimasukkan
+    cout << "Nilai-nilai elemen array yang dimasukkan:" << endl;
+    for (int i = 0; i < size1; ++i) {
+        for (int j = 0; j < size2; ++j) {
+            for (int k = 0; k < size3; ++k) {
+                cout << "arr[" << i << "][" << j << "][" << k << "] = " << arr[i][j][k] << endl;
             }
-            cout << endl;
         }
-        cout << endl;
     }
 
     return 0;
@@ -262,83 +262,78 @@ int main() {
 
 ```
 #### Output:
-<img width="629" alt="Screenshot 2024-03-19 195347" src="https://github.com/benwaiz/Struktur-Data-Assignment/assets/161665572/da7087c1-6fdf-4943-8c30-a5325396df0d">
+![image](https://github.com/NarayaAlfan19/Struktur-Data-Assigment/assets/162522372/88c9a04a-15b5-46fd-b70f-e03e12e32a01)
 
 Program di atas adalah contoh program C++ yang memungkinkan pengguna untuk memasukkan elemen-elemen ke dalam array tiga dimensi dan kemudian menampilkan isi array tersebut. 
- Program meminta pengguna untuk memasukkan jumlah elemen dalam masing-masing dimensi dari array tiga dimensi.
- Setelah ukuran array ditentukan, program mendeklarasikan array tiga dimensi dengan ukuran sesuai input pengguna.
- Pengguna diminta untuk memasukkan elemen-elemen array tiga dimensi melalui looping.
- Setiap elemen array diminta secara terurut sesuai dimensi x, y, dan z, dan kemudian disimpan di dalam array.
- Setelah semua elemen dimasukkan, program menampilkan isi array tiga dimensi dengan cara menelusuri setiap elemen dan mencetak nilainya.
- Setelah selesai menampilkan, program selesai.
+Program tersebut meminta pengguna untuk memasukkan ukuran untuk setiap dimensi dari array tiga dimensi, kemudian membuat array tersebut sesuai dengan ukuran yang dimasukkan. Selanjutnya, program meminta pengguna untuk memasukkan nilai-nilai elemen dan menampilkan kembali nilai-nilai elemen yang dimasukkan.
 
 ### 3. Buatlah program menu untuk mencari nilai Maksimum, Minimum dan Nilai rata – rata dari suatu array dengan input yang dimasukan oleh user!
 
 ```C++
 #include <iostream>
+#include <limits>
+
 using namespace std;
 
 int main() {
-    int n;
-    cout << "Masukkan jumlah elemen array: ";
-    cin >> n;
+    int size;
 
-    // Deklarasi array
-    int arr[n];
+    // Meminta pengguna untuk memasukkan ukuran array
+    cout << "Masukkan ukuran array: ";
+    cin >> size;
 
-    // Input elemen array dari pengguna
-    cout << "Masukkan elemen-elemen array:" << endl;
-    for (int i = 0; i < n; ++i) {
-        cout << "Elemen ke-" << i + 1 << ": ";
+    // Membuat array dengan ukuran yang dimasukkan oleh pengguna
+    int arr[size];
+
+    // Meminta pengguna untuk memasukkan nilai-nilai array
+    cout << "Masukkan nilai-nilai array:" << endl;
+    for (int i = 0; i < size; ++i) {
+        cout << "Nilai ke-" << i + 1 << ": ";
         cin >> arr[i];
     }
 
     // Menampilkan menu
-    cout << "Menu:" << endl;
-    cout << "1. Cari nilai maksimum" << endl;
-    cout << "2. Cari nilai minimum" << endl;
-    cout << "3. Cari nilai rata-rata" << endl;
+    cout << "\nMenu:\n";
+    cout << "1. Cari nilai maksimum\n";
+    cout << "2. Cari nilai minimum\n";
+    cout << "3. Hitung nilai rata-rata\n";
+    cout << "Pilih operasi yang ingin Anda lakukan (1/2/3): ";
 
     int choice;
-    cout << "Pilih menu (1/2/3): ";
     cin >> choice;
 
-    // Proses sesuai dengan pilihan pengguna
-    switch (choice) {
-        case 1: {
-            // Cari nilai maksimum
-            int max = arr[0];
-            for (int i = 1; i < n; ++i) {
-                if (arr[i] > max) {
-                    max = arr[i];
-                }
+    // Mencari nilai maksimum
+    if (choice == 1) {
+        int max = arr[0];
+        for (int i = 1; i < size; ++i) {
+            if (arr[i] > max) {
+                max = arr[i];
             }
-            cout << "Nilai maksimum: " << max << endl;
-            break;
         }
-        case 2: {
-            // Cari nilai minimum
-            int min = arr[0];
-            for (int i = 1; i < n; ++i) {
-                if (arr[i] < min) {
-                    min = arr[i];
-                }
+        cout << "Nilai maksimum: " << max << endl;
+    }
+    // Mencari nilai minimum
+    else if (choice == 2) {
+        int min = arr[0];
+        for (int i = 1; i < size; ++i) {
+            if (arr[i] < min) {
+                min = arr[i];
             }
-            cout << "Nilai minimum: " << min << endl;
-            break;
         }
-        case 3: {
-            // Cari nilai rata-rata
-            double sum = 0;
-            for (int i = 0; i < n; ++i) {
-                sum += arr[i];
-            }
-            double average = sum / n;
-            cout << "Nilai rata-rata: " << average << endl;
-            break;
+        cout << "Nilai minimum: " << min << endl;
+    }
+    // Menghitung nilai rata-rata
+    else if (choice == 3) {
+        int sum = 0;
+        for (int i = 0; i < size; ++i) {
+            sum += arr[i];
         }
-        default:
-            cout << "Pilihan tidak valid!" << endl;
+        double average = static_cast<double>(sum) / size;
+        cout << "Nilai rata-rata: " << average << endl;
+    }
+    // Jika pilihan tidak valid
+    else {
+        cout << "Pilihan tidak valid." << endl;
     }
 
     return 0;
@@ -346,7 +341,7 @@ int main() {
 ```
 
 #### Output:
-<img width="636" alt="Screenshot 2024-03-19 200609" src="https://github.com/benwaiz/Struktur-Data-Assignment/assets/161665572/2b7848a3-a3fe-4853-a394-cf56faeac6fb">
+![image](https://github.com/NarayaAlfan19/Struktur-Data-Assigment/assets/162522372/f42d2cc2-987f-4d63-9077-047d683f3103)
 
 Program di atas adalah sebuah program C++ sederhana yang memungkinkan pengguna untuk memasukkan elemen-elemen ke dalam sebuah array, kemudian memilih opsi untuk mencari nilai maksimum, minimum, atau rata-rata dari elemen-elemen tersebut.
 Program meminta pengguna untuk memasukkan jumlah elemen array.
