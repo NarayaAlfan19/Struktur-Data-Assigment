@@ -1,5 +1,5 @@
 # <h1 align="center">Laporan Praktikum Modul 3 - Linked list</h1>
-<p align="center">Andika Neviantoro - 2311102167</p>
+<p align="center">Mohammad Alfan Naraya - 2311102170</p>
 <p align="center">IF - 11 - E</p>
 
 ## Dasar Teori
@@ -326,7 +326,7 @@ int main()
 ```
 
 #### Output :
-![Screenshot (2875)](https://github.com/andikaneviantoro/Struktur-Data-Assigment/assets/98001415/5076a5d0-08ab-43ad-ae08-e848c7c82507)
+![image](https://github.com/NarayaAlfan19/Struktur-Data-Assigment/assets/162522372/21324d31-c55a-4922-8154-d5219b9be7ae)
 
 
 Program di atas adalah implementasi dari sebuah single linked list. Program ini terdiri dari beberapa fungsi dasar yang mencakup operasi-operasi seperti penambahan elemen di depan, di belakang, di tengah, penghapusan elemen di depan, di belakang, di tengah, serta pengubahan nilai elemen di depan, di belakang, dan di tengah. Selain itu, terdapat juga fungsi untuk menghitung jumlah elemen dalam list dan untuk membersihkan seluruh isi list.
@@ -467,7 +467,7 @@ int main() {
 ```
 
 #### Output :
-![Screenshot (2876)](https://github.com/andikaneviantoro/Struktur-Data-Assigment/assets/98001415/ff73c813-a5b0-4cd3-b367-71174ff0c3f6)
+![image](https://github.com/NarayaAlfan19/Struktur-Data-Assigment/assets/162522372/1d123f6a-da53-4562-a311-e02e53d583ae)
 
 
 Program di atas adalah implementasi double linked list. Kelas Node mendefinisikan struktur simpul dengan tiga anggota: data, prev, dan next. Kelas DoublyLinkedList menyediakan fungsi-fungsi dasar seperti penambahan data ke depan, penghapusan data dari depan, pengubahan data, penghapusan seluruh isi, dan penampilan isi linked list.
@@ -615,7 +615,7 @@ int main() {
     LinkedList daftar;
 
     // Memasukkan data
-    daftar.sisipkan("Andika", 17);
+    daftar.sisipkan("Alfan", 17);
     daftar.sisipkan("John", 19);
     daftar.sisipkan("Jane", 20);
     daftar.sisipkan("Michael", 18);
@@ -682,17 +682,17 @@ int main() {
 ```
 
 #### Output:
-a. ![Screenshot (2877)](https://github.com/andikaneviantoro/Struktur-Data-Assigment/assets/98001415/31e6c386-2c84-4228-aafb-3756d916713c)
+a. ![image](https://github.com/NarayaAlfan19/Struktur-Data-Assigment/assets/162522372/357b6c82-da0f-49b1-9f7c-06ba95f925e6)
 
-b. ![Screenshot (2878)](https://github.com/andikaneviantoro/Struktur-Data-Assigment/assets/98001415/5f46cc90-74f9-4154-8472-32743d68ae0e)
+b. ![image](https://github.com/NarayaAlfan19/Struktur-Data-Assigment/assets/162522372/17ca935e-b006-4a79-8a9b-c08f3ede9ece)
 
-c. ![Screenshot (2879)](https://github.com/andikaneviantoro/Struktur-Data-Assigment/assets/98001415/59557b89-9d00-4aee-95b1-e8460325048e)
+c. ![image](https://github.com/NarayaAlfan19/Struktur-Data-Assigment/assets/162522372/580ae382-d216-4426-b867-d4109b2e4726)
 
-d. ![Screenshot (2880)](https://github.com/andikaneviantoro/Struktur-Data-Assigment/assets/98001415/181c4bb4-4f1d-4a05-97d0-eba2093a73a0)
+d. ![image](https://github.com/NarayaAlfan19/Struktur-Data-Assigment/assets/162522372/3be42b98-ebb1-4c01-b449-03981bad7237)
 
-e. ![Screenshot (2881)](https://github.com/andikaneviantoro/Struktur-Data-Assigment/assets/98001415/b1ec0907-5351-464d-9651-f570460572cf)
+e. ![image](https://github.com/NarayaAlfan19/Struktur-Data-Assigment/assets/162522372/d590f17b-30ab-4610-93b5-1ecf388be6ab)
 
-f. ![Screenshot (2882)](https://github.com/andikaneviantoro/Struktur-Data-Assigment/assets/98001415/e3013f3a-645c-4eed-94c4-d3d31f24272b)
+f. ![image](https://github.com/NarayaAlfan19/Struktur-Data-Assigment/assets/162522372/6644da53-eedc-492d-b90d-b7a15da8e845)
 
 
 Program ini memungkinkan pengguna untuk melakukan beberapa operasi, termasuk menambahkan, menghapus, dan mengubah data mahasiswa, serta menampilkan seluruh data yang telah dimasukkan.
@@ -861,7 +861,7 @@ public:
     void tampilkanData() {
         Node* current = head;
         cout << "----------------------" << endl;
-        cout << "Nama Produk  ||\t Harga " << endl;
+        cout << "Nama Produk  ##\t Harga " << endl;
         cout << "----------------------" << endl;
         while (current != NULL) {
             cout << current->namaProduk << "\t" << current->harga << endl;
@@ -884,7 +884,7 @@ int main() {
 
     do {
         cout << "--------------------------------" << endl;
-        cout << " || Toko Skincare Purwokerto || " << endl;
+        cout << " ### Toko Skincare Purwokerto ### " << endl;
         cout << "--------------------------------" << endl;
 
         cout << "1. Tambah Data" << endl;
@@ -960,10 +960,10 @@ int main() {
 #### Output:
 
 ##### Tampilan Awal:
-![Screenshot (2883)](https://github.com/andikaneviantoro/Struktur-Data-Assigment/assets/98001415/11b666b9-efc8-4f86-8f4f-f05547b74504)
+![image](https://github.com/NarayaAlfan19/Struktur-Data-Assigment/assets/162522372/b4b71c40-4284-4e86-80c0-1aaeb5dd649b)
 
 ##### 1. Tambahkan produk Azarine dengan harga 65000 diantara Somethinc dan Skintific:
-![Screenshot (2884)](https://github.com/andikaneviantoro/Struktur-Data-Assigment/assets/98001415/ff83c036-c54e-4a96-8bd1-28f9fe178e47)
+![image](https://github.com/NarayaAlfan19/Struktur-Data-Assigment/assets/162522372/70a45818-d6bf-4775-8cb0-ca6bf8cabb28)
 
 ##### 2. Hapus produk wardah:
 ![Screenshot (2885)](https://github.com/andikaneviantoro/Struktur-Data-Assigment/assets/98001415/6ca7b8ae-158f-4c54-ad70-6479e915b724)
