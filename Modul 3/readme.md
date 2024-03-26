@@ -733,6 +733,9 @@ Fungsi main() berfungsi sebagai antarmuka pengguna, dimana pengguna dapat memili
 ### Cleora 55.000
 
 ```C++
+//MOHAMMAD ALFAN NARAYA
+//2311102170
+
 #include <iostream>
 using namespace std;
 
@@ -861,7 +864,7 @@ public:
     void tampilkanData() {
         Node* current = head;
         cout << "----------------------" << endl;
-        cout << "Nama Produk  ##\t Harga " << endl;
+        cout << "Nama Produk  **\t Harga " << endl;
         cout << "----------------------" << endl;
         while (current != NULL) {
             cout << current->namaProduk << "\t" << current->harga << endl;
@@ -875,8 +878,8 @@ int main() {
     daftarProduk.tambahData("Originote", 60000);
     daftarProduk.tambahData("Somethinc", 150000);
     daftarProduk.tambahData("Skintific", 100000);
-    daftarProduk.tambahData("Wardah   ", 50000);
-    daftarProduk.tambahData("Hanasui  ", 30000);
+    daftarProduk.tambahData("Wardah", 50000);
+    daftarProduk.tambahData("Hanasui", 30000);
 
     int pilihan;
     string nama, newName, setelah;
@@ -884,7 +887,7 @@ int main() {
 
     do {
         cout << "--------------------------------" << endl;
-        cout << " ### Toko Skincare Purwokerto ### " << endl;
+        cout << " ** Toko Skincare Purwokerto ** " << endl;
         cout << "--------------------------------" << endl;
 
         cout << "1. Tambah Data" << endl;
@@ -966,13 +969,13 @@ int main() {
 ![image](https://github.com/NarayaAlfan19/Struktur-Data-Assigment/assets/162522372/70a45818-d6bf-4775-8cb0-ca6bf8cabb28)
 
 ##### 2. Hapus produk wardah:
-![Screenshot (2885)](https://github.com/andikaneviantoro/Struktur-Data-Assigment/assets/98001415/6ca7b8ae-158f-4c54-ad70-6479e915b724)
+![image](https://github.com/NarayaAlfan19/Struktur-Data-Assigment/assets/162522372/fbcd0082-309f-41d9-8624-35795c81533e)
 
 ##### 3, Update produk Hanasui menjadi Cleora dengan harga 55.000
-![Screenshot (2886)](https://github.com/andikaneviantoro/Struktur-Data-Assigment/assets/98001415/12f63963-5767-4e45-a11d-8b256b9fa60e)
+![image](https://github.com/NarayaAlfan19/Struktur-Data-Assigment/assets/162522372/9150e8b7-d4db-4361-8f3a-d23dcb40a5ea)
 
 ##### 4. Tampilan Akhir Menu
-![Screenshot (2887)](https://github.com/andikaneviantoro/Struktur-Data-Assigment/assets/98001415/982b7355-9d56-4da5-bf43-65d5ab29c6e8)
+![image](https://github.com/NarayaAlfan19/Struktur-Data-Assigment/assets/162522372/4fb16a15-5a33-4b8a-8aa7-74d9f3a4ff2b)
 
 
 Program C++ di atas adalah aplikasi manajemen data produk yang menggunakan struktur data linked list. Program ini memungkinkan pengguna untuk menambah, menghapus, mengupdate, serta menampilkan data produk. Pengguna dapat memilih operasi yang diinginkan melalui menu yang disediakan. Setiap operasi yang dilakukan akan segera memperbarui tampilan data produk. Program akan berjalan hingga pengguna memilih untuk keluar.
