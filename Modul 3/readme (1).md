@@ -485,6 +485,9 @@ Program juga menyediakan antarmuka pengguna melalui fungsi main(), dimana penggu
 ####    f. Tampilkan seluruh data
 
 ```C++
+//MOHAMMAD ALFAN NARAYA
+//2311102170
+
 #include <iostream>
 #include <string>
 
