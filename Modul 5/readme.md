@@ -1,5 +1,5 @@
 # <h1 align="center">Laporan Praktikum Modul 5 - Hash Table</h1>
-<p align="center">Ben Waiz Pintus W - 2311102169</p>
+<p align="center">Mohammad Alfan Naraya - 2311102170</p>
 <p align="center">IF - 11 - E</p>
 
 ## Dasar Teori
@@ -173,7 +173,7 @@ int main() {
 ```
 
 #### Output :
-![Screenshot 2024-04-17 001416](https://github.com/benwaiz/Struktur-Data-Assignment/assets/161665572/aeb80510-bbbe-455e-9081-d254cd7b49cc)
+![image](https://github.com/NarayaAlfan19/Struktur-Data-Assigment/assets/162522372/bfd40f0e-d304-4caf-83f2-c33decd770c7)
 
 Program di atas merupakan implementasi dari struktur data hash table menggunakan teknik hashing sederhana dengan metode pembagian. Hash table tersebut memungkinkan operasi-operasi dasar seperti penyisipan (insertion), pencarian (searching), penghapusan (deletion), dan penelusuran (traversal). 
 Setiap elemen dalam hash table direpresentasikan sebagai simpul (Node) yang terdiri dari kunci (key) dan nilai (value).
@@ -283,7 +283,7 @@ return 0;
 ```
 
 #### Output :
-![Screenshot 2024-04-17 001806](https://github.com/benwaiz/Struktur-Data-Assignment/assets/161665572/7a611b95-2390-4a44-ac2b-14ddc844fc39)
+![image](https://github.com/NarayaAlfan19/Struktur-Data-Assigment/assets/162522372/dc402b28-b61e-4b5e-aa36-34b7b9f78ce8)
 
 Program di atas merupakan implementasi dari struktur data hash map menggunakan chaining untuk menangani tabrakan (collision). Hash map tersebut digunakan untuk menyimpan informasi nama dan nomor telepon karyawan. Setiap karyawan direpresentasikan oleh sebuah simpul (node) yang terdiri dari nama dan nomor telepon. 
 Program menyediakan operasi-operasi dasar seperti penyisipan (insertion), pencarian (searching), dan penghapusan (removal) berdasarkan nama karyawan.
@@ -296,8 +296,8 @@ Program menyediakan operasi-operasi dasar seperti penyisipan (insertion), pencar
 ### c. Implementasikan fungsi untuk menambahkan data baru, menghapus data, mencari data berdasarkan NIM, dan mencari data berdasarkan rentang nilai (80 – 90).
 
 ```C++
-//Ben Waiz Pintus W
-//2311102169
+//Mohammad Alfan Naraya
+//2311102170
 
 #include <iostream>
 #include <unordered_map>
@@ -350,7 +350,7 @@ public:
 
 // Fungsi untuk menampilkan menu
 void tampilkanMenu() {
-    cout << "-=-=-=-=-=Menu-=-=-=-=-=-=-\n";
+    cout << "----------Menu----------\n";
     cout << "1. Tambah data mahasiswa\n";
     cout << "2. Hapus data mahasiswa\n";
     cout << "3. Cari data mahasiswa berdasarkan NIM\n";
@@ -427,19 +427,20 @@ int main() {
 
 #### Output:
 a. tampilan awal
-![image](https://github.com/benwaiz/Struktur-Data-Assignment/assets/161665572/8ec7f67e-7076-4caa-ab66-b7cb732642e8)
+![image](https://github.com/NarayaAlfan19/Struktur-Data-Assigment/assets/162522372/9000766d-3ccf-4e01-9346-225e5c4a0cea)
 
 b. menu tambah data
-![Screenshot 2024-04-17 003646](https://github.com/benwaiz/Struktur-Data-Assignment/assets/161665572/2f39fbb3-b187-4eca-b7f6-3fb7df5ddffc)
+![image](https://github.com/NarayaAlfan19/Struktur-Data-Assigment/assets/162522372/b42bf34b-2457-4e97-a253-2823f110d377)
 
 c. menu cari data berdasarkan NIM
-![Screenshot 2024-04-17 003851](https://github.com/benwaiz/Struktur-Data-Assignment/assets/161665572/f8cdf21e-95a3-42b3-8ec7-503ae1a58e9a)
+![image](https://github.com/NarayaAlfan19/Struktur-Data-Assigment/assets/162522372/f509768a-b412-4433-a7d2-f814687149ba)
 
 d. menu cari data berdasarkan nilai
-![Screenshot 2024-04-17 004039](https://github.com/benwaiz/Struktur-Data-Assignment/assets/161665572/f0386579-40f5-4b25-99a6-881e9fea1444)
+![image](https://github.com/NarayaAlfan19/Struktur-Data-Assigment/assets/162522372/cabeb36f-3b20-42f3-8821-19c8ccb47bd7)
 
 e. menu hapus data
-![Screenshot 2024-04-17 004245](https://github.com/benwaiz/Struktur-Data-Assignment/assets/161665572/d9645861-dfdd-40e5-96ef-fbfb6a8428ed)
+![image](https://github.com/NarayaAlfan19/Struktur-Data-Assigment/assets/162522372/1ecc741d-d06f-4591-b85b-a931ba9f6787)
+![image](https://github.com/NarayaAlfan19/Struktur-Data-Assigment/assets/162522372/e5966aec-2ae8-4306-ad17-73b19bcb3085)
 
 Program ini memungkinkan pengguna untuk menambahkan, menghapus, mencari data mahasiswa berdasarkan NIM, serta mencari data mahasiswa yang memiliki nilai di rentang tertentu. Selain itu, program juga menyediakan menu interaktif untuk memudahkan pengguna dalam melakukan operasi-operasi tersebut. 
 Setiap data mahasiswa disimpan dalam sebuah struktur data Mahasiswa yang terdiri dari NIM, nama, dan nilai. Pengguna dapat memilih operasi yang diinginkan dari menu yang disediakan hingga keluar dari program.
