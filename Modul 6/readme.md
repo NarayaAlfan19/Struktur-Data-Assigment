@@ -1,5 +1,5 @@
 # <h1 align="center">Laporan Praktikum Modul 6 - Stack</h1>
-<p align="center">Ben Waiz Pintus W - 2311102169</p>
+<p align="center">Mohammad Alfan Naraya - 2311102170</p>
 <p align="center">IF - 11 - E</p>
 
 ## Dasar Teori
@@ -143,7 +143,7 @@ int main () {
 ```
 
 #### Output :
-![Screenshot 2024-05-08 120216](https://github.com/benwaiz/Struktur-Data-Assignment/assets/161665572/8e54f2e8-db0b-4be7-8a67-2fc5ede0bdc3)
+![image](https://github.com/NarayaAlfan19/Struktur-Data-Assigment/assets/162522372/0b41857e-1092-4107-b5d8-fac90c47e6c9)
 
 
 Program di atas adalah implementasi stack menggunakan array dalam bahasa C++. Program ini memiliki fungsi-fungsi dasar stack seperti push, pop, peek, isEmpty, isFull, countStack, changeArrayBuku, dan destroyArrayBuku. 
@@ -159,8 +159,8 @@ Buatlah program untuk menentukan apakah kalimat tersebut yang diinputkan dalam p
 Palindrom kalimat yang dibaca dari depan dan belakang sama. Jelaskan bagaimana cara kerja programnya.
 
 ```C++
-//Ben Waiz Pintus W
-//2311102169
+//Mohammad Alfan Naraya
+//2311102170
 
 #include <iostream>
 #include <stack>
@@ -215,8 +215,8 @@ int main() {
 ```
 
 #### Output:
-![Screenshot 2024-05-08 121031](https://github.com/benwaiz/Struktur-Data-Assignment/assets/161665572/fe8ddfb2-7ad8-4726-b124-f46999009270)
-![Screenshot 2024-05-08 121103](https://github.com/benwaiz/Struktur-Data-Assignment/assets/161665572/0d6b0a78-b1e0-44d4-a209-86725c6cb2c1)
+![image](https://github.com/NarayaAlfan19/Struktur-Data-Assigment/assets/162522372/597fa41e-19ca-406e-9429-207c739b82e2)
+![image](https://github.com/NarayaAlfan19/Struktur-Data-Assigment/assets/162522372/6d46709f-1dc8-43c2-a5c0-bb57a57a44cb)
 
 
 Program meminta pengguna memasukkan sebuah kalimat. Kemudian, string tersebut dibersihkan dari karakter non-alphanumeric dan semua huruf diubah menjadi huruf kecil agar perbandingannya menjadi case-insensitive.
@@ -230,8 +230,8 @@ Jika semua karakter cocok (membaca dari kedua ujung ke tengah) dan tidak ada per
 Buatlah program untuk melakukan pembalikan terhadap kalimat menggunakan stack dengan minimal 3 kata. Jelaskan output program dan source codenya beserta operasi/fungsi yang dibuat?
 
 ```C++
-//Ben Waiz Pintus W
-//2311102169
+//Mohammad Alfan Naraya
+//2311102170
 
 #include <iostream>
 #include <stack>
@@ -269,11 +269,10 @@ int main() {
 
     return 0;
 }
-
 ```
 
 #### Output:
-![Screenshot 2024-05-08 125015](https://github.com/benwaiz/Struktur-Data-Assignment/assets/161665572/5a1a9921-2de8-4d7f-b868-d4ef22a1b115)
+![image](https://github.com/NarayaAlfan19/Struktur-Data-Assigment/assets/162522372/1e0dd10f-a151-44d2-83eb-af10d2e4cb1b)
 
 Program meminta pengguna memasukkan sebuah kalimat yang terdiri dari minimal tiga kata. Lalu, Kalimat tersebut akan dibaca oleh program. Selanjutnya, Program akan memasukkan setiap huruf dari kalimat ke dalam stack. 
 Setelah semua huruf dimasukkan ke dalam stack, program akan membalikkan urutan huruf dengan mengeluarkan huruf dari stack satu per satu dan memasukkannya ke dalam string hasil pembalikan huruf.
