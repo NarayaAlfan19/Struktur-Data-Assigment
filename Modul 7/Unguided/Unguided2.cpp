@@ -1,105 +1,82 @@
+//2311102170
+//Mohammad Alfan Naraya
+
 #include <iostream>
 using namespace std;
 
-// Node structure for linked list
-struct Node {
+struct Mahasiswa {
     string nama;
     string nim;
-    Node* next;
+    Mahasiswa* next;
 };
 
-// Queue class using linked list
-class Queue {
-private:
-    Node* front;
-    Node* back;
-    int size;
-    const int maksimalQueue = 5; // Maksimal antrian
+Mahasiswa* front = nullptr; 
+Mahasiswa* back = nullptr; 
 
-public:
-    Queue() {
-        front = nullptr;
-        back = nullptr;
-        size = 0;
+void enqueueAntrian(string nama, string nim) {
+    Mahasiswa* newNode = new Mahasiswa;
+    newNode->nama = nama;
+    newNode->nim = nim;
+    newNode->next = nullptr;
+    if (front == nullptr) { 
+        front = newNode;
+        back = newNode;
+    } else { 
+        back->next = newNode;
+        back = newNode;
     }
+}
 
-    bool isFull() { // Pengecekan antrian penuh atau tidak
-        return size == maksimalQueue;
+void dequeueAntrian() {
+    if (front == nullptr) {
+        cout << "Antrian kosong" << endl;
+    } else {
+        Mahasiswa* temp = front;
+        front = front->next;
+        delete temp;
     }
+}
 
-    bool isEmpty() { // Antriannya kosong atau tidak
-        return size == 0;
+int countQueue() {
+    int count = 0;
+    Mahasiswa* current = front;
+    while (current != nullptr) {
+        count++;
+        current = current->next;
     }
+    return count;
+}
 
-    void enqueueAntrian(string nama, string nim) { // Fungsi menambahkan antrian
-        if (isFull()) {
-            cout << "Antrian penuh" << endl;
-        } else {
-            Node* newNode = new Node();
-            newNode->nama = nama;
-            newNode->nim = nim;
-            newNode->next = nullptr;
-            if (isEmpty()) {
-                front = newNode;
-                back = newNode;
-            } else {
-                back->next = newNode;
-                back = newNode;
-            }
-            size++;
-        }
+void clearQueue() {
+    while (front != nullptr) {
+        Mahasiswa* temp = front;
+        front = front->next;
+        delete temp;
     }
+    back = nullptr;
+}
 
-    void dequeueAntrian() { // Fungsi mengurangi antrian
-        if (isEmpty()) {
-            cout << "Antrian kosong" << endl;
-        } else {
-            Node* temp = front;
-            front = front->next;
-            delete temp;
-            size--;
-            if (isEmpty()) {
-                back = nullptr;
-            }
-        }
+void viewQueue() {
+    cout << "Data antrian mahasiswa:" << endl;
+    Mahasiswa* current = front;
+    int i = 1;
+    while (current != nullptr) {
+        cout << i << ". Nama: " << current->nama << ", NIM: " << current->nim << endl;
+        current = current->next;
+        i++;
     }
-
-    int countQueue() { // Fungsi menghitung banyak antrian
-        return size;
-    }
-
-    void clearQueue() { // Fungsi menghapus semua antrian
-        while (!isEmpty()) {
-            dequeueAntrian();
-        }
-    }
-
-    void viewQueue() { // Fungsi melihat antrian
-        cout << "Data antrian mahasiswa:" << endl;
-        Node* current = front;
-        int index = 1;
-        while (current != nullptr) {
-            cout << index << ". Nama: " << current->nama << ", NIM: " << current->nim << endl;
-            current = current->next;
-            index++;
-        }
-        for (int i = index; i <= maksimalQueue; i++) {
-            cout << i << ". (tidak ada)" << endl;
-        }
-    }
-};
+}
 
 int main() {
-    Queue queue;
-    queue.enqueueAntrian("Andi", "2311102170");
-    queue.enqueueAntrian("Maya", "2311109876");
-    queue.viewQueue();
-    cout << "Jumlah antrian = " << queue.countQueue() << endl;
-    queue.dequeueAntrian();
-    queue.viewQueue();
-    cout << "Jumlah antrian = " << queue.countQueue() << endl;
-    queue.clearQueue();
-    queue.viewQueue();
-    cout << "Jumlah antrian = " << queue.countQueue() << endl;
+    enqueueAntrian("Andi", "2311102170");
+    enqueueAntrian("Maya", "2311189987");
+    viewQueue();
+    cout << "Jumlah antrian = " << countQueue() << endl;
+    dequeueAntrian();
+    viewQueue();
+    cout << "Jumlah antrian = " << countQueue() << endl;
+    clearQueue();
+    viewQueue();
+    cout << "Jumlah antrian = " << countQueue() << endl;
     return 0;
 }
